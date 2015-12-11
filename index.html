@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Richard Costin - Exam 2 problem</title>
+    <link rel="stylesheet" href="styles/Exam2Problem.css" >
+    <script type="text/javascript" src="js/Exam2Problem.js" ></script>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval'; connect-src http://bus-pluto.ad.uab.edu">
+</head>
+
+<body>
+    <div>
+        <br>
+        <select id="selectMenu" onchange="SelectArea(this)">
+            <option value="">Please select one</option>
+            <option value="productCategoryList">Product Category List</option>
+            <option value="addProductCategory">Add Product Category</option>
+            <option value="changeProductCategory">Change Product Category</option>
+            <option value="deleteProductCategory">Delete Product Category</option>
+            <option value="about">About Developer</option>
+        </select>
+    </div>
+    <section id="sectionOne">
+        
+        <div id="sectionOneResult"></div>
+    </section>
+    <section id="sectionTwo">
+        <table>
+            <caption>Add Product Category</caption>
+            <tr>
+                <td><label>Product Category Name</label></td>
+                <td><input type="text" id="secTwoProductCategoryName" ></td>
+            </tr>
+            <tr>
+                <td><label>Product Category Description</label></td>
+                <td><input type="text" id="secTwoProductCategoryDescription" ></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="AddProductCategory()" >Add Product Category</button></td>
+            </tr>
+        </table>
+        
+        <div id="sectionTwoResult"></div>
+
+    </section>
+    <section id="sectionThree">
+        <table>
+            <caption>Update Product Category Description</caption>
+            <tr>
+                <td><label>Enter a Category ID</label></td>
+                <td><input type="text" id="secThreeCategoryID" ></td>
+            </tr>
+            <tr>
+                <td><label>Updated Category Description</label></td>
+                <td><input type="text" id="secThreeCategoryDescription" ></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="EditProductCategoryDescription()" >Update Category Description</button></td>
+            </tr>
+        </table>
+        <div id="sectionThreeResult"></div>
+    </section>
+    <section id="sectionFour">
+        <table>
+            <caption>Delete Product Category</caption>
+            <tr>
+                <td><label>Enter a Category ID</label></td>
+                <td><input type="text" id="secFourCategoryID" ></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick="DeleteProductCategory()" >Delete Product Category</button></td>
+            </tr>
+        </table>
+        <div id="sectionFourResult"></div>
+    </section>
+    <section id="sectionFive">
+        <table>
+            <caption>About</caption>
+            <tr>
+                <td><label>Created by: Richard Costin</label></td>
+            </tr>
+            <tr>
+                <td><label>This app was created by using a<br> combination of HTML5,<br> JavaScript, and CSS.</label></a></td>
+            </tr>
+            <tr>
+                <td><label>Email:</label>&nbsp;<a href="mailto:costinri@uab.edu">costinri@uab.edu</a></td>
+            </tr>
+        </table>
+        <div id="sectionFiveResult"></div>
+    </section>
+
+
+</body>
+</html>

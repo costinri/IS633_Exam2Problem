@@ -1,0 +1,78 @@
+body {
+    width: 600px;
+    background-color:  #BDBDBD;
+}
+footer {
+    //font-style: italic;
+    text-align: center;
+    position: absolute;
+    top: 637px;
+}
+section {
+    position: absolute;
+    width: 600px;
+    height: 550px;
+    top: 75px;
+    overflow: scroll;
+    overflow-x:  hidden;
+}
+
+label {
+    font-size: large;
+}
+
+#sectionOne{
+    visibility: hidden;
+}
+
+#sectionTwo {
+    visibility: hidden;
+}
+
+#sectionThree {
+    visibility: hidden;
+}
+
+#sectionFour {
+    visibility: hidden;
+}
+
+#sectionFive {
+    visibility: hidden;
+}
+
+#divTop {
+    text-align: center;
+}
+
+select {
+    font-size: 18px;
+}
+
+
+table, tr, td {
+    
+    border-spacing: 5px;
+    text-align: center;
+    vertical-align: text-top;
+    
+}
+
+th {
+    font-weight: bold;
+    font-size: large;
+}
+
+caption{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    font-weight: bold;
+    font-size: large;
+}
